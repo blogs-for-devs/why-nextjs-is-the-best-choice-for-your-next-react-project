@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Why Next.js is the Best Choice for Your Next React Project
+This is an example of a To Do List app, which is used to support [this blog article](https://blogsfordevs.com/article/why-nextjs-is-the-best-choice-for-your-next-react-project) on Next.js. It is a simple Next.js project, set up with create-next-app, which demonstrates the concepts of Server Components and Server Actions.
 
 ## Getting Started
+### Set up the database
+1. Go to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) and log in or register (it's free)
+2. Create a new Project
+3. Create a new Cluster
+   1. Choose the M0 / free tier
+   2. Name it and choose a provider and region
+   3. Create deployment
+   4. Create a database user (note the username and password)
+   5. Copy down the SRV connection string (example: `mongodb+srv://your_db_user:your_db_user_password@your_cluster.mizjqjx.mongodb.net/?appName=your_cluster`)
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Get the app running
+1. Clone this repository into an IDE, such as Visual Studio Code
+2. Run `npm install` in a terminal to install the necessary packages
+3. Open the `.env.development.local` file, and enter your Mongo DB SRV connection string for the `MONGODB_URI`
+4. Run `npm run dev` in a terminal to start the application
+5. Open http://localhost:3000/ in a browser
